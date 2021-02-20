@@ -5,7 +5,7 @@
         v-btn.py-2(v-for="link in links" :key="link" :href="link.href" color="white" icon)
           v-icon {{link.icon}}
       v-col.py-0.text-center(cols="12")
-       v-btn.py-0.text-center.white--text.font-weight-bold(to='./about' text='' plain='' justify='center' color='white' @click="viewform" ) Contact Us
+       v-btn.py-0.text-center.white--text.font-weight-bold(to='./about' text='' justify='center' color='white' @click="viewform" ) Contact Us
       v-col.py-0.text-center.white--text.font-weight-bold(cols="12") {{ new Date().getFullYear() }} — Devlup Labs
 </template>
 <script>
