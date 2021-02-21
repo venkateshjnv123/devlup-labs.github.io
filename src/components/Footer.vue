@@ -39,7 +39,7 @@ export default {
     },
     viewform: function() {
       this.clicked = true;
-        this.scrollform();
+      this.scrollform();
     }
   },
   components: {
