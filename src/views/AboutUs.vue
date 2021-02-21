@@ -49,10 +49,7 @@ v-container(fluid='' style='margin: 0px; padding: 0px; width: 100%;')
             iframe(name='hiddenframe' height='0' width='0' border='0' style='display: none;' onload="if(submitted){location.reload()}")
             v-form(class="login my-3" max-height='300px' id="user_info_submit" name="form"
                   action="https://docs.google.com/forms/d/e/1FAIpQLScF25Ruct7LDlDyG8GBqb5pybTFE_DnfqJOjxzBY38k5-4fLQ/formResponse"
-                  method="POST" target="hiddenframe"
-                  v-model="validform"
-                  v-ref='form'
-                  onsubmit="submitted=true;")
+                  method="POST" target="hiddenframe"  v-model="validform" v-ref='form' onsubmit="submitted=true;")
               h1(style='color:#1b65c4;' class="font-weight-bold py-3") Contact Us
                 v-text-field(label="Full name: " prepend-icon='mdi-account' id="name" name="entry.1947078806" color='#1b65c4' type="text" counter=20 v-model="Name" :rules="namerules")
                 v-text-field(label="Email: "  prepend-icon='mdi-email' id="email"   name="entry.251653149" color='#1b65c4' type="email" v-model="emailaddress" :rules="emailrules")
